@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="cvs.com.asyncttaskvsreact.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingTop="@dimen/content_vertical_padding"
+        android:text="@string/compare_asynctask_and_react_implementation_for_http_requests"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/enter_url"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_url"
+        android:inputType="textUri"
+        android:paddingTop="@dimen/content_vertical_padding" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/content_vertical_padding"
+        android:text="@string/star_wars_api"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/content_vertical_padding">
+
+        <Button
+            android:id="@+id/luke_skywalker_execute"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/luke_skywalker" />
+
+        <Button
+            android:id="@+id/yavin_four_execute"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/yavin_iv" />
+
+        <Button
+            android:id="@+id/death_star_execute"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/death_star" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/content_vertical_padding"
+        android:text="@string/execute_with"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+    <RadioGroup
+        android:id="@+id/radio_group_client"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/content_vertical_padding">
+
+        <RadioButton
+            android:id="@+id/radio_group_async_task"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/asynctask"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Button" />
+
+        <RadioButton
+            android:id="@+id/radio_group_react"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/react"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Button" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/execute"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/content_vertical_padding"
+        android:background="@color/colorPrimaryDark"
+        android:text="@string/execute"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/content_vertical_padding"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/result" />
+
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>
